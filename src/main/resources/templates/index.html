@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PV_TP4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div th:replace="fragments/header :: navbar"></div>
+        </header>
+        
+        <div class="row">
+            <main class="col-9">
+                <div th:replace="fragments/header :: cardVisual"></div>
+            </main>
+            
+            <aside class="col-3">
+                <a class="nav-link" href="#">Biblioteca</a>
+                <a class="nav-link" href="#">Calendario Académico</a>
+            </aside>
+        </div>
+        
+        <div th:replace="fragments/header :: pagination"></div>
+        
+        <footer>
+            <div th:replace="fragments/header :: footerdark"></div>
+        </footer>
+    </div>
+    <script src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
